@@ -30,25 +30,37 @@ class HomeScreen extends StatelessWidget {
             // min - 최소
             mainAxisSize: MainAxisSize.max,
             children: [
-              Container(
-                color: Colors.red,
-                width: 50.0,
-                height: 50.0,
+              // Expanded / Flexible - Column과 Row에서만 사용
+              // flex - 비율 조절 (기본 1)
+              Flexible(
+                flex: 2,
+                child: Container(
+                  color: Colors.red,
+                  width: 50.0,
+                  height: 50.0,
+                ),
               ),
-              Container(
-                color: Colors.orange,
-                width: 50.0,
-                height: 50.0,
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.orange,
+                  width: 50.0,
+                  height: 50.0,
+                ),
               ),
-              Container(
-                color: Colors.yellow,
-                width: 50.0,
-                height: 50.0,
+              Expanded(
+                child: Container(
+                  color: Colors.yellow,
+                  width: 50.0,
+                  height: 50.0,
+                ),
               ),
-              Container(
-                color: Colors.green,
-                width: 50.0,
-                height: 50.0,
+              Expanded(
+                child: Container(
+                  color: Colors.green,
+                  width: 50.0,
+                  height: 50.0,
+                ),
               ),
             ],
           ),
