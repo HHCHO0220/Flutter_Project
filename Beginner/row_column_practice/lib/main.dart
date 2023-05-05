@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:row_column/screen/home_screen.dart';
+import 'package:row_column_practice/screen/home_screen.dart';
 
 void main() {
   runApp(
